@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let arr = [1, 2, 4, 5, 6, 8, 2, 3];
+    let tong = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        // kiem tra arr[i] co la snt k
+
+        // kiểm tra snt
+        let a = arr[i];
+        for (let i = 2; i <= a; i++) {
+            if(i === a) {
+                // document.write("là snt");
+                tong += a;
+                break;
+            }
+
+            if(a % i === 0) {
+                // document.write("không là snt");
+                break;
+            }
+        }
+    }
+
+    document.write(tong)
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
